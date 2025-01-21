@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Get real-time weather updates for any location worldwide with our interactive weather app">
+    <meta name="theme-color" content="#1e3c72">
+    <title>Weather App - FUNTOONS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer" role="main" style="min-height: 100vh; margin: 0; width: 100%; max-width: 100%; border-radius: 0;">
+        <nav class="navbar" role="navigation" style="padding: 2rem 4rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+            <div class="logo" style="display: flex; align-items: center; gap: 1.5rem;">
+                <i class="fas fa-cloud-sun fa-3x" aria-hidden="true" style="color: #2a5298;"></i>
+                <span style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(45deg, #1e3c72, #2a5298); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">WeatherApp</span>
+            </div>
+        </nav>
+        <div class="hero-section" style="padding: 4rem 2rem; text-align: center; background: rgba(255,255,255,0.05);">
+            <header class="header" style="max-width: 800px; margin: 0 auto;">
+                <h1 style="font-size: 4.5rem; margin-bottom: 2rem; background: linear-gradient(45deg, #1e3c72, #2a5298); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">Your Personal Weather Assistant</h1>
+                <p class="subtitle" style="font-size: 2rem; color: #4CA1FF; text-shadow: 0 0 10px rgba(76, 161, 255, 0.3); margin-bottom: 3rem;">Get real-time weather updates for any location worldwide</p>
+            </header>
+
+            <form id="weatherForm" action="MyServlet" method="post" class="searchInput" role="search" style="max-width: 800px; margin: 0 auto;">
+                <div class="search-box" style="width: 100%; position: relative;">
+                    <input 
+                        type="text" 
+                        placeholder="Search for a city..." 
+                        id="city" 
+                        name="city"
+                        autocomplete="off"
+                        aria-label="Search for a city"
+                        style="font-size: 2rem; height: 6rem; padding: 0 7rem 0 3rem; width: 100%; border-radius: 3rem; background: rgba(255,255,255,0.95);"
+                    />
+                    <button id="searchButton" type="submit" aria-label="Search" style="position: absolute; right: 0.5rem; top: 50%; transform: translateY(-50%); width: 5rem; height: 5rem; font-size: 2rem; border-radius: 50%;">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <input type="hidden" id="latitude" name="latitude" value="" />
+                <input type="hidden" id="longitude" name="longitude" value="" />
+            </form>
+        </div>
+
+        <div class="earth-section" style="padding: 4rem 2rem; text-align: center;">
+            <h2 style="font-size: 3rem; margin-bottom: 2rem; color: #fff;">Or Click Anywhere on the Globe</h2>
+            <div id="earth-container"></div>
+        </div>
+
+        <section class="features" style="padding: 2rem;">
+            <div class="tech-stack" style="padding: 4rem 0; text-align: center; background: rgba(255,255,255,0.05);">
+                <h3 style="font-size: 2.5rem; margin-bottom: 3rem; color: #2a5298;">Powered by</h3>
+                <div class="tech-icons" style="font-size: 4rem; display: flex; justify-content: center; gap: 4rem; margin-bottom: 3rem;">
+                    <span style="transition: transform 0.3s; cursor: pointer; color: #E44D26;"><i class="fab fa-html5" aria-label="HTML5" title="HTML5"></i></span>
+                    <span style="transition: transform 0.3s; cursor: pointer; color: #264DE4;"><i class="fab fa-css3-alt" aria-label="CSS3" title="CSS3"></i></span>
+                    <span style="transition: transform 0.3s; cursor: pointer; color: #F7DF1E;"><i class="fab fa-js" aria-label="JavaScript" title="JavaScript"></i></span>
+                    <span style="transition: transform 0.3s; cursor: pointer; color: #007396;"><i class="fab fa-java" aria-label="Java" title="Java"></i></span>
+                </div>
+                <p style="font-size: 1.8rem; color: #2a5298; max-width: 600px; margin: 0 auto;">Built with modern web technologies and OpenWeather API for accurate weather data</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="myScript.js"></script>
+</body>
+</html>
