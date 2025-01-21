@@ -1,0 +1,33 @@
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse temporary files
+*.tmp
+*.bak
+
+# Ignore build directories
+bin/
+target/
+
+# Ignore Tomcat files
+logs/
+work/
+temp/
+webapps/
+
+# IDE-related files (e.g., IntelliJ, NetBeans)
+.idea/
+*.iml
+*.swp
+
+# OS-specific files
+Thumbs.db
+.DS_Store
