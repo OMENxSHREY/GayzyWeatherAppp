@@ -4,7 +4,7 @@ Welcome to **GayzyWeatherAppp4**, your futuristic, dynamic, and responsive 3D Ea
 
 ## 💥 **Project Overview**
 
-A sleek, **cyberpunk-inspired** interactive **3D Earth model** with a glowing interface, perfect for showcasing **real-time weather data** anywhere you need. 🌐✌️
+A sleek, **christmas-themed** interactive **3D Earth model** with a glowing interface, perfect for showcasing **real-time weather data** anywhere you need. 🌐✌️
 
 ### Features:
 - **3D Earth**: Interactive globe with detailed textures and lighting effects.
@@ -23,7 +23,7 @@ A sleek, **cyberpunk-inspired** interactive **3D Earth model** with a glowing in
 ## 🌐 **Live Demo / Website**
 
 Experience the project live here:  
-[**GayzyWeatherAppp4 Live**](https://example.com)
+[**GayzyWeatherAppp4 Live**](https://gayzy-weather-fiasco.wegic.app/)
 
 ## 📦 **Installation**
 
@@ -47,7 +47,7 @@ Experience the project live here:
     npm start
     ```
 
-5. Open your browser and go to `http://localhost:3000` to experience the magic! ✨
+5. Open your browser and go to `https://gayzy-weather-fiasco.wegic.app/` to experience the magic! ✨
 
 ## ⚡ **Tech Stack**
 - **Frontend**: JavaScript (Three.js for 3D Earth model), HTML, CSS (Cyberpunk UI)
@@ -77,4 +77,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Cyberpunk Interface & Immersive UX Design 🔮** – *Built with passion for cutting-edge tech and weather enthusiasts who love style and functionality.* 🌈
+**Christmas Interface & Immersive UX Design 🔮** – *Built with passion for cutting-edge tech and weather enthusiasts who love style and functionality.* 🌈
